@@ -1,26 +1,27 @@
-<?php 
-/**
- Model category.php permet afficher une archive par category
-*/
-
-
-get_header();?>
-
-<main>
-    <h3>exercice1</h3>
-    <h2>this is the first page of my try</h2>
 <?php
-if (have_posts()):
-     while (have_posts()) : the_post();
-       // the_title('<h1>','<h1>');
-          //the_content();?>
-          <h1><a href="<?php the_permalink();?>"><?= get_the_title() ?></a></h1>
-          <?php
-
-        // the_excerpt();
-        echo wp_trim_words(get_the_excerpt(), 4);
-    endwhile;
-endif;
-?> 
-</main>
+/**
+    Modèle category.php permet d'afficher une archive par catégorie d'article
+*/
+get_header() ?>
+<main class="site__main">
+   <section class="blocflex">
+      <?php
+      $category = get_queried_object();
+      $args = array(
+         'category_name' => $category->slug,
+         'orderby' => 'title',
+         'order' => 'ASC'
+      );
+      $query = new WP_Query( $args );
+      if ( $query->have_posts() ) :
+         while ( $query->have_posts() ) : $query->the_post(); ?>
+            <article>
+               <h2><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h2>
+               <h5><p><?= wp_trim_words(get_the_excerpt(), 15) ?></p></h5>
+            </article>
+         <?php endwhile; ?>
+      <?php endif;
+      wp_reset_postdata();?>
+   </section>
+</?main> 
 <?php get_footer(); ?>
