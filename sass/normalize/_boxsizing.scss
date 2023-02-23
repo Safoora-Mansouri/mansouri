@@ -1,0 +1,10 @@
+
+/*definition du box sizing*/
+_::before,
+\*::after {
+box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+}

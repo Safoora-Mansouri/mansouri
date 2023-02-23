@@ -1,0 +1,54 @@
+
+.logomenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  
+
+ }
+ .site__entete{
+  
+
+
+ }
+
+ img{
+    width:150px;
+    height: 150px;
+    
+ }
+
+
+
+.menu-entete-container{
+    flex:1;
+    .menu{
+         //ul
+         display: flex;
+         justify-content: flex-end;
+         flex-wrap: wrap;
+         background-color: black;
+         padding: 20px;
+         margin-left: auto;
+         .menu-item{
+             //li
+             flex: 1 0 70px;
+             list-style: none;
+           
+
+             a{
+                text-decoration: none;
+                padding: 3px 5px;
+                color: white;
+
+
+             }
+             a:hover{
+                color: bisque;
+             }
+
+
+         }
+    }
+}
