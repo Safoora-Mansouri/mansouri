@@ -89,6 +89,7 @@ p {
 img {
   width: 150px;
   height: 150px;
+  border-radius: 50%;
 }
 
 .menu-entete-container {
@@ -98,7 +99,6 @@ img {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  background-color: black;
   padding: 20px;
   margin-left: auto;
 }
@@ -109,10 +109,9 @@ img {
 .menu-entete-container .menu .menu-item a {
   text-decoration: none;
   padding: 3px 5px;
-  color: white;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: bisque;
+  color: rgb(233, 147, 42);
 }
 
 .blocflex {

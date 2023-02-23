@@ -16,6 +16,7 @@
  img{
     width:150px;
     height: 150px;
+    border-radius: 50%;
     
  }
 
@@ -28,7 +29,6 @@
          display: flex;
          justify-content: flex-end;
          flex-wrap: wrap;
-         background-color: black;
          padding: 20px;
          margin-left: auto;
          .menu-item{
@@ -40,12 +40,12 @@
              a{
                 text-decoration: none;
                 padding: 3px 5px;
-                color: white;
+              
 
 
              }
              a:hover{
-                color: bisque;
+                color: rgb(233, 147, 42);
              }
 
 
