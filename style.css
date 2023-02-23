@@ -133,3 +133,8 @@ img {
   padding: 10px;
   color: rgb(71, 65, 65);
 }
+.recherche input {
+  height: 25px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
