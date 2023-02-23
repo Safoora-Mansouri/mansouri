@@ -15,6 +15,8 @@
             <?php the_custom_logo(); ?>
             <?php wp_nav_menu(array('menu'=> 'entete',
             'container' => 'nav'))?>
+
+            <?= get_search_form(); ?>
         </section>
       <h1><a href="<?php bloginfo('name')?><?php bloginfo('url')?>"></a></h1>
     <h2><?php bloginfo('description')?></h2>

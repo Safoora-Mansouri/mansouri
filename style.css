@@ -98,7 +98,7 @@ img {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  background-color: black;
+  /* background-color: black; */
   padding: 20px;
   margin-left: auto;
 }
@@ -109,7 +109,7 @@ img {
 .menu-entete-container .menu .menu-item a {
   text-decoration: none;
   padding: 3px 5px;
-  color: white;
+  color: black;
 }
 .menu-entete-container .menu .menu-item a:hover {
   color: bisque;
@@ -125,4 +125,9 @@ img {
   padding: 5px;
   border: 1px solid gray;
   flex: 1 0 300px;
+}
+
+.recherche article {
+  background-color: azure;
+  margin: 10px;
 }
