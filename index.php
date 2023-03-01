@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<main>
+<main class="site__main">
     <h3>exercice1</h3>
     <h2>this is the first page of my try</h2>
 <?php
