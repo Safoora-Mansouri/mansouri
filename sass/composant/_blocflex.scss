@@ -2,11 +2,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    article{
-        margin: 10px;
-        padding: 5px;
-        border: 1px solid gray;
-        flex:1 0 300px;
+    
+}
+.blocflex__article{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    flex:1 0 300px;
 
-    }
+}
+.blocflex__galerie{
+   
+    flex:1 0 100%;
+
 }

@@ -14,6 +14,10 @@ Text Domain: 31w-Safoora-Mansouri
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+body{
+    text-align: center;
+}
 /*---------------------NORMALIZE---------------*/
 @import "normalize/normalize";
 @import "normalize/boxsizing";
