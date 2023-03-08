@@ -11,19 +11,12 @@ get_header() ?>
     <section class="blocflex">
 <?php 
 if (have_posts()):
-    while (have_posts()) : the_post();
-
-        //the_title('<h1>','</h1>');
-        //the_permalink(); ?>
-        <?php if (in_category('galerie')){
-                get_template_part("template-parts/categorie","galerie");
-        }
-        else{
-            get_template_part("template-parts/categorie","note-wp");
-        }
-
-    
-    endwhile;?>
+    while (have_posts()) : the_post(); ?>
+    <?php
+        $ma_categorie = "note_wp";
+         if (in_category('galerie')){$ma_categorie = "galerie";}
+                get_template_part("template-parts/categorie",$ma_categorie);
+     endwhile;?>
 <?php endif;
 ?>
     </section>   
