@@ -1,16 +1,16 @@
 <aside class="site__aside">
-        <h3>Menu Secondaire</h3>
-        <?php
+        <h3>Menu secondaire</h3>
+        <?php 
         $category = get_queried_object();
         if (isset($category))
         {
             $lemenu = $category->slug;
         }else{
-            $lemenu = "not-wp";
+            $lemenu = "note-wp";
         }
+
         wp_nav_menu(array(
             "menu" => $lemenu,
             "container" => "nav"
         )); ?>
-
     </aside>

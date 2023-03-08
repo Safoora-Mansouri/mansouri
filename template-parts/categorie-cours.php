@@ -2,6 +2,7 @@
 /**
  * template-part qui permettra d'afficher 
  * un article provenant d'un conteneur  de class blocflex
+ * pour un article de catégorie cours
  */
 $titre = get_the_title();
 $sigle = substr($titre, 0, 7);
