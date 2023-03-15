@@ -16,10 +16,22 @@
  img{
     width:150px;
     height: 150px;
-    border-radius: 50%;
+    
     
  }
+ .menusearch{
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-end;
+   flex-direction: column-reverse;
+   @media screen and (min-width:1000px) {
+      flex-direction: row;
+      align-items: flex-end;
+      // flex: 1;
+      
+   }
 
+ }
 
 
 .menu-entete-container{
@@ -38,6 +50,7 @@
            
 
              a{
+               white-space: nowrap;
                 text-decoration: none;
                 padding: 3px 5px;
               
@@ -51,4 +64,10 @@
 
          }
     }
+}
+
+.recherche{
+   display: flex;
+   flex-wrap: nowrap;
+
 }
