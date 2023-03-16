@@ -1,73 +1,97 @@
 
+.site__entete {
+   background: rgb(169, 166, 136);
+
+}
 .logomenu{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
 
-  
+}
+.logomenu img{
+   border-radius: 50%;
+   width: 150px;
+}
 
- }
- .site__entete{
-  
-
-
- }
-
- img{
-    width:150px;
-    height: 150px;
+.menusearch {
+    display : flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
     
-    
- }
- .menusearch{
-   display: flex;
-   justify-content: flex-start;
-   align-items: flex-end;
-   flex-direction: column-reverse;
-   @media screen and (min-width:1000px) {
-      flex-direction: row;
-      align-items: flex-end;
-      // flex: 1;
-      
-   }
-
- }
-
-
-.menu-entete-container{
-    flex:1;
-    .menu{
-         //ul
-         display: flex;
-         justify-content: flex-end;
-         flex-wrap: wrap;
-         padding: 20px;
-         margin-left: auto;
-         .menu-item{
-             //li
-             flex: 1 0 70px;
-             list-style: none;
-           
-
-             a{
-               white-space: nowrap;
-                text-decoration: none;
-                padding: 3px 5px;
-              
-
-
-             }
-             a:hover{
-                color: rgb(233, 147, 42);
-             }
-
-
-         }
+    @media screen and (min-width:1000px) {
+        flex-direction: row;
+        align-items:center;
+        justify-content: flex-end;
+        flex: 1;
     }
 }
 
-.recherche{
-   display: flex;
-   flex-wrap: nowrap;
+#chkBurger {
+    display : none;
+}
+#chkBurger:checked ~ .menu-entete-container {
+    transform : translateX(0);
+}
+.burger {
+    display : block;
+    @media screen and (min-width: 500px) {
+    display: none;    
+}
+}
+
+.menu-entete-container { // nav
+    transform : translateX(300px);
+    transition : transform .25s;
+    margin-right: 50px;
+    @media screen and (min-width: 500px) {
+        transform : translateX(0);  
+}
+
+.menu { //ul 
+    display : flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    list-style-type: none;
+    gap:100px ;
+ 
+
+@media screen and (min-width: 500px) {
+    flex-direction : row;  
+    justify-content: flex-end;
+    align-items: center;
+}
+    
+    
+ 
+ 
+   // margin-left : auto;
+
+.menu-item { // li
+        flex : 1 0 50px;
+
+    a{
+        white-space: nowrap;
+        padding : 3px 5px;
+        color : #555;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    a:hover {
+        color : rgb(85, 58, 108);
+    }
 
 }
+
+}
+
+}
+
+.recherche {
+    display : flex;
+    flex-wrap: nowrap;
+}
+
