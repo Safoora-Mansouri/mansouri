@@ -11,6 +11,11 @@
     flex:1 0 300px;
 
 }
+.blocflex__article:hover{
+   transform: scale(1.1);
+    transition: .5s;
+    background-color: rgb(237, 238, 239);
+}
 .blocflex__galerie{
    
     flex:1 0 100%;

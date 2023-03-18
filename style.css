@@ -96,7 +96,6 @@ p {
 
 .logomenu img {
   border-radius: 50%;
-  width: 150px;
 }
 
 .menusearch {
@@ -168,7 +167,7 @@ p {
   font-family: sans-serif;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: rgb(85, 58, 108);
+  color: rgb(163, 120, 201);
 }
 
 .recherche {
@@ -189,6 +188,12 @@ p {
   flex: 1 0 300px;
 }
 
+.blocflex__article:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: rgb(237, 238, 239);
+}
+
 .blocflex__galerie {
   flex: 1 0 100%;
 }
@@ -200,10 +205,11 @@ p {
   padding: 10px;
   color: rgb(71, 65, 65);
 }
-.main__recherche input {
-  height: 25px;
-  background-color: antiquewhite;
-  border-radius: 10px;
+
+input {
+  background-color: white;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
 }
 
 .menu {
@@ -249,6 +255,10 @@ Mise en page avec display: grid
 .site__footer {
   grid-area: footer;
   background-color: rgb(169, 166, 136);
+}
+
+.site__footer h3 {
+  font-size: small;
 }
 
 .site__aside {

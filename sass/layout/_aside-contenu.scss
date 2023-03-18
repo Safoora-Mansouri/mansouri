@@ -17,6 +17,9 @@ Mise en page avec display: grid
     grid-area: footer;
     background-color:rgb(169, 166, 136);;
   }
+  .site__footer h3{
+   font-size: small;
+  }
 
   .site__aside {
     grid-area: aside;
