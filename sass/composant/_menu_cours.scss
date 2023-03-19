@@ -5,9 +5,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     @media screen and (min-width : 1000px){
-        flex-direction: column;                
+        flex-direction: column; 
+                       
     }
+
 
     .menu-item{ //li
         list-style-type:none;
@@ -15,8 +18,12 @@
 
     }
     a{
+        text-decoration: none;
+        color: #555555;
+        font-weight: bold;
         .cours__sigle{
             padding:  3px;
+            
 
         }
         .cours__titre{
@@ -27,4 +34,9 @@
 
         }
     }
+}
+
+#menu-footer{
+    flex-direction: row;
+    
 }

@@ -216,6 +216,7 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media screen and (min-width: 1000px) {
   .menu {
@@ -224,6 +225,11 @@ input {
 }
 .menu .menu-item {
   list-style-type: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: bold;
 }
 .menu a .cours__sigle {
   padding: 3px;
@@ -235,6 +241,10 @@ input {
   .menu a .cours__titre {
     display: block;
   }
+}
+
+#menu-footer {
+  flex-direction: row;
 }
 
 /*-----------------LAYOUT----------------------*/
