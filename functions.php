@@ -39,6 +39,7 @@ add_theme_support('custom-logo',
 add_action('after_setup_theme', 'enregistrement_des_menus', 0);
 
 
+
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
  * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
@@ -55,7 +56,7 @@ function cidweb_modifie_requete_principal( $query ) {
 	 }
 	 add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 
-
+	 add_theme_support('custom-background');
 /**
  * permet de modifier les titre du menu "cours"
  * @param $title : titre du choix menu

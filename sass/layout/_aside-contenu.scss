@@ -5,17 +5,20 @@ Mise en page avec display: grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(222, 226, 174);
+  background-color: transparent;
 }
   
   .site__main {
     grid-area: main;
     overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    background-color: aqua;
   }
   
   .site__footer {
     grid-area: footer;
     background-color:rgb(169, 166, 136);;
+    text-align: center;
+    
   }
   .site__footer h3{
    font-size: small;
