@@ -83,6 +83,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.invisible {
+  display: none;
+}
+
 /*--------------Composante------------------*/
 .site__entete {
   background: rgb(169, 166, 136);
@@ -183,8 +187,9 @@ p {
 
 .blocflex__article {
   margin: 10px;
+  background-color: white;
   padding: 5px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 30px rgb(0, 0, 0);
   flex: 1 0 300px;
 }
 
@@ -260,7 +265,7 @@ Mise en page avec display: grid
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: aqua;
+  background-color: rgba(249, 251, 243, 0.05);
 }
 
 .site__footer {
@@ -285,7 +290,6 @@ Mise en page avec display: grid
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .site {
@@ -296,7 +300,6 @@ Mise en page avec display: grid
 
 .no-aside {
   grid-template-areas: "header" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .no-aside {
