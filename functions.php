@@ -71,6 +71,12 @@ function cidweb_modifie_requete_principal( $query ) {
 	$sigle = substr($title, 4,3);
 	$title = substr($title,7);
 	$title = "<div class='cours__sigle'>" . $sigle . "</div>". "<p class='cours__titre'>" . wp_trim_words($title, 2, ' ... ') . "</p>";
+
+	}
+	if($args->menu == 'note-wp'){
+		if(substr($title,0,1)=='0'){
+			$title = substr($title,1);
+		}
 	}
 	return  $title ; 
 	}

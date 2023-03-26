@@ -232,12 +232,20 @@ input {
   list-style-type: none;
 }
 .menu a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #555555;
+  font-variant: small-caps;
   font-weight: bold;
 }
 .menu a .cours__sigle {
   padding: 3px;
+}
+@media screen and (min-width: 1000px) {
+  .menu a .cours__sigle {
+    padding: 3px;
+  }
 }
 .menu a .cours__titre {
   display: none;
@@ -265,7 +273,6 @@ Mise en page avec display: grid
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: rgba(249, 251, 243, 0.05);
 }
 
 .site__footer {

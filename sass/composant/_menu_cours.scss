@@ -1,3 +1,6 @@
+.menu-note-wp-container{
+
+}
 .menu-cours-container{
 
 }
@@ -18,13 +21,18 @@
 
     }
     a{
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: #555555;
+        font-variant: small-caps;
         font-weight: bold;
         .cours__sigle{
             padding:  3px;
-            
 
+            @media screen and (min-width:1000px) {
+                padding: 3px;
+            }
         }
         .cours__titre{
             display: none;
