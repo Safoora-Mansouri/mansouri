@@ -1,12 +1,22 @@
 <?php
-//template footer.php
+/**
+* Template footer.php
+*/
 ?>
 <footer class="site__footer">
-    <h3>tous les droits sont réservés</h3>
-    <?php wp_nav_menu(array(
-                    'menu'  => 'footer',
-                    'container' => 'nav'
-                )); ?> 
+<section class="footer__widget">   
+    <div><?php dynamic_sidebar( 'pied-page-1' ); ?></div>
+    <div><?php dynamic_sidebar( 'pied-page-2' ); ?></div>
+    <div><?php dynamic_sidebar( 'pied-page-3' ); ?></div>
+</section> 
+<section class="footer__lien">
+    <div><?php wp_nav_menu(array('menu'=>'lien-externe-1',
+                                'contaier' => 'nav',
+                                'container_class' => 'footer__lien__nav')); ?></div>
+    <div><?php ?></div>
+    <div><?php ?></div>
+</section>
+
 </footer>
 <?php wp_footer(); ?>
 </body>

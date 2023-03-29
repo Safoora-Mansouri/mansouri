@@ -260,6 +260,24 @@ input {
   flex-direction: row;
 }
 
+.site__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__widget {
+  display: flex;
+  flex-direction: row;
+}
+.footer__widget div {
+  flex: 1 0 33%;
+}
+
+.footer__lien {
+  display: flex;
+  flex-direction: row;
+}
+
 /*-----------------LAYOUT----------------------*/
 /**
 Mise en page avec display: grid
