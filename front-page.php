@@ -4,7 +4,19 @@
 */
 get_header() ?>
 <main class="site__main">
-    <code>front-page.php</code>
+   
+    <section class="viewport">
+        <h1>Tp2</h1>
+        <h4>Auteur : safoora Mansouri</h4>
+        <h4>Cours : 31w - Introduction de gestion de contenue</h4>
+
+        <?php wp_nav_menu(array(
+            "menu"=> "evenement",
+            "container"=> "nav",
+            "container_class"=> "menu__bloc"
+        )); ?>
+
+    </section>
 
     <section class="blocflex">
         <?php 
