@@ -9,7 +9,7 @@ get_header() ?>
    
     <section class="viewport">
         
-        <h1>Tp2</h1>
+        <h1>Exer 4</h1>
         <h4>Auteur : safoora Mansouri</h4>
         <h4>Cours : 31w - Introduction de gestion de contenue</h4>
 
