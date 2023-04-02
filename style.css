@@ -282,6 +282,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 15px;
 }
 .menu__bloc .menu .menu-item {
   border: 1px solid #aaa;
