@@ -88,35 +88,73 @@ p {
 }
 
 /*--------------Composante------------------*/
+/* Site Header */
 .site__entete {
-  background: rgb(169, 166, 136);
+  text-align: center;
+}
+.site__entete a {
+  color: black;
+  text-decoration: none;
 }
 
+/* Logo and Navigation */
 .logomenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent;
 }
-
-.logomenu img {
-  border-radius: 50%;
-}
-
-.menusearch {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-@media screen and (min-width: 1000px) {
-  .menusearch {
-    flex-direction: row;
+@media screen and (max-width: 768px) {
+  .logomenu {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    flex: 1;
   }
 }
 
+.logomenu img {
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+.logomenu > a > img {
+  display: block;
+}
+@media screen and (max-width: 499px) {
+  .logomenu > a > img {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .logomenu > a > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Search Menu */
+.menusearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .menusearch {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menusearch {
+    padding-top: 18px;
+  }
+}
+
+/* Burger Menu */
 #chkBurger {
   display: none;
 }
@@ -127,19 +165,21 @@ p {
 
 .burger {
   display: block;
+  position: absolute;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .burger {
     display: none;
   }
 }
 
+/* Main Menu */
 .menu-entete-container {
   transform: translateX(300px);
   transition: transform 0.25s;
-  margin-right: 50px;
+  text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .menu-entete-container {
     transform: translateX(0);
   }
@@ -150,62 +190,62 @@ p {
   align-items: flex-end;
   justify-content: flex-start;
   list-style-type: none;
-  gap: 100px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  font-size: clamp(0.8rem, 0.8rem + 0.8vw, 0.8rem);
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .menu-entete-container .menu {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
 }
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .menu-entete-container .menu {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-entete-container .menu {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .menu-entete-container .menu .menu-item {
-  flex: 1 0 50px;
+  flex: 1 0 70px;
+  min-width: 150px;
+  transition: all 0.2s ease-in-out;
+  max-height: 50px;
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
-  padding: 3px 5px;
-  color: #555;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
-  font-weight: bold;
-  font-family: sans-serif;
+  color: #544410;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: rgb(163, 120, 201);
+  color: #544410;
+}
+.menu-entete-container .menu .menu-item:hover {
+  transform: scale(1.1);
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-  }
-  .menu-item {
-    flex: 1 0 100%;
-    text-align: center;
-  }
-  .menu__hamburger {
-    display: block;
-  }
-  #chkBurger:checked + .burger + nav .menu {
-    display: flex;
-  }
-  .menu-entete-container .menu {
-    gap: 12px;
-  }
-}
-.menu__hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
+/* Search Box */
 .recherche {
   display: flex;
   flex-wrap: nowrap;
+}
+
+/* Text Header */
+.texte-entete {
+  text-align: left;
+  padding-left: 120px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .blocflex {
@@ -232,7 +272,7 @@ p {
   flex: 1 0 100%;
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 768px) {
   .blocflex {
     display: block;
   }
