@@ -38,7 +38,7 @@
 }
 .burger {
     display : block;
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 768px) {
     display: none;    
 }
 }
@@ -47,7 +47,7 @@
     transform : translateX(300px);
     transition : transform .25s;
     margin-right: 50px;
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 768px) {
         transform : translateX(0);  
 }
 
@@ -60,11 +60,12 @@
     gap:100px ;
  
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
     flex-direction : row;  
     justify-content: flex-end;
     align-items: center;
 }
+
     
     
  
@@ -92,6 +93,42 @@
 }
 
 }
+/////////////////////////////////////////////////////////
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .menu-item {
+      flex: 1 0 100%;
+      text-align: center;
+    }
+  
+    .menu__hamburger {
+      display: block;
+    }
+  
+    #chkBurger:checked + .burger + nav .menu {
+      display: flex;
+    }
+    .menu-entete-container .menu{
+        gap: 12px;
+      }
+  }
+  
+  .menu__hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  ///////////////////////////////////////
+
 
 .recherche {
     display : flex;
