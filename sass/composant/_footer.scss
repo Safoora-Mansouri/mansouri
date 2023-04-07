@@ -18,3 +18,33 @@
    
         
 }
+@media screen and (max-width: 767px) {
+    .site__footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer__widget {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer__widget div {
+      margin-bottom: 10px;
+    }
+    .footer__lien {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer__lien div {
+      margin-bottom: 10px;
+    }
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+
+
+
+//////////////////////////////////

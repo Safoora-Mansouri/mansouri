@@ -12,6 +12,23 @@
     flex:1 0 300px;
 
 }
+
+@media only screen and (max-width: 767px) {
+    .blocflex__article {
+      flex: 1 0 auto;
+      height: 150px;
+      margin-bottom: 20px;
+      
+    }
+    .blocflex__article a {
+      font-size: 1.5rem;
+      margin-top: 15px;
+    }
+    .blocflex__article p {
+        font-size: 1rem;
+       
+      }
+  }
 .blocflex__article:hover{
    transform: scale(1.03);
     transition: .5s;

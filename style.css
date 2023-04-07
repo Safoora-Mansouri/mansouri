@@ -175,8 +175,7 @@ p {
 
 /* Main Menu */
 .menu-entete-container {
-  transform: translateX(300px);
-  transition: transform 0.25s;
+  transition: transform 0.3s;
   text-transform: uppercase;
 }
 @media screen and (min-width: 500px) {
@@ -188,11 +187,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
   max-width: 100%;
-  font-size: clamp(0.8rem, 0.8rem + 0.8vw, 0.8rem);
+  font-size: clamp(0.9rem, 0.9rem + 0.9vw, 0.9rem);
   font-family: Arial, Helvetica, sans-serif;
   gap: 30px;
 }
@@ -216,7 +215,7 @@ p {
   }
 }
 .menu-entete-container .menu .menu-item {
-  flex: 1 0 70px;
+  flex: 1 0 100px;
   min-width: 150px;
   transition: all 0.2s ease-in-out;
   max-height: 50px;
@@ -225,13 +224,13 @@ p {
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  color: #544410;
+  color: black;
 }
 .menu-entete-container .menu .menu-item a:hover {
   color: #544410;
 }
 .menu-entete-container .menu .menu-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Search Box */
@@ -262,6 +261,20 @@ p {
   flex: 1 0 300px;
 }
 
+@media only screen and (max-width: 767px) {
+  .blocflex__article {
+    flex: 1 0 auto;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .blocflex__article a {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  .blocflex__article p {
+    font-size: 1rem;
+  }
+}
 .blocflex__article:hover {
   transform: scale(1.03);
   transition: 0.5s;
@@ -357,6 +370,31 @@ input {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 767px) {
+  .site__footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__widget {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__widget div {
+    margin-bottom: 10px;
+  }
+  .footer__lien {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__lien div {
+    margin-bottom: 10px;
+  }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .menu__bloc .menu {
   display: flex;
   flex-wrap: wrap;

@@ -1,153 +1,4 @@
 
-// .site__entete {
-//    background: rgb(169, 166, 136);
-
-// }
-// .logomenu{
-//     display:flex;
-//     justify-content: space-between;
-//     align-items: center;
- 
-// }
-// .logomenu img{
-//    border-radius: 50%;
-   
-  
-// }
-
-// .menusearch {
-//     display : flex;
-//     flex-direction: column-reverse;
-//     justify-content: flex-start;
-//     align-items: flex-end;
-
-
-    
-//     @media screen and (min-width:1000px) {
-//         flex-direction: row;
-//         align-items:center;
-//         justify-content: center;
-//         flex: 1;
-//     }
-//     @media screen and (max-width:768px) {
-//         flex-direction:column;
-   
-//     }
-
-// }
-
-// #chkBurger {
-//     display : none;
-// }
-// #chkBurger:checked ~ .menu-entete-container {
-//     transform : translateX(0);
-// }
-// .burger {
-//     display : block;
-//     @media screen and (min-width: 1000px) {
-//     display: none;    
-// }
-// }
-
-// .menu-entete-container { // nav
-//     transform : translateX(300px);
-//     transition : transform .25s;
-//     margin-right: 50px;
-//     @media screen and (min-width: 1000px) {
-//         transform : translateX(0);  
-// }
-
-// .menu { //ul 
-//     display : flex;
-//     flex-direction: column;
-//     align-items: flex-end;
-//     justify-content: flex-start;
-//     list-style-type: none;
-//     gap:100px ;
- 
-
-// @media screen and (min-width: 1000px) {
-//     flex-direction : row;  
-//     justify-content: flex-end;
-//     align-items: center;
-// }
-
-    
-    
- 
- 
-//    // margin-left : auto;
-
-// .menu-item { // li
-//         flex : 1 0 50px;
-
-//     a{
-//         white-space: nowrap;
-//         padding : 3px 5px;
-//         color : #555;
-//         text-decoration: none;
-//         font-weight: bold;
-//         font-family: sans-serif;
-//     }
-//     a:hover {
-//         color : rgb(163, 120, 201);
-        
-//     }
-
-// }
-
-// }
-
-// }
-// /////////////////////////////////////////////////////////
-// /* Responsive styles */
-// @media screen and (max-width: 1000px) {
-//     .menu {
-//       display: none;
-//       flex-direction: column;
-//     }
-  
-//     .menu-item {
-//       flex: 1 0 100%;
-//       text-align: center;
-//     }
-  
-//     .menu__hamburger {
-//       display: block;
-//     }
-  
-//     #chkBurger:checked + .burger + nav .menu {
-//       display: flex;
-//     }
-//     .menu-entete-container .menu{
-//         gap: 12px;
-//       }
-//       .menusearch {
-//         justify-content:center;
-//         align-items: center;
-//   }
-  
-//   .menu__hamburger {
-//     display: none;
-//     font-size: 2rem;
-//     cursor: pointer;
-//     background: transparent;
-//     border: none;
-//     outline: none;
-//   }
-// }
-
-//   ///////////////////////////////////////
-
-
-// .recherche {
-//     display : flex;
-//     flex-wrap: nowrap;
-
-// }
-
-
-//////////////////////////////////////
 
 /* Site Header */
 .site__entete {
@@ -165,6 +16,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+   
+    
   
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -232,8 +85,8 @@
   
   /* Main Menu */
   .menu-entete-container {
-    transform: translateX(300px);
-    transition: transform 0.25s;
+   
+    transition: transform 0.3s;
     text-transform: uppercase;
   
     @media screen and (min-width: 500px) {
@@ -244,11 +97,11 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      justify-content: flex-start;
+      justify-content: center;
       list-style-type: none;
       flex-wrap: wrap;
       max-width: 100%;
-      font-size: clamp(.8rem, .8rem + .8vw, .8rem);
+      font-size: clamp(.9rem, .9rem + .9vw, .9rem);
       font-family: Arial, Helvetica, sans-serif;
       gap: 30px;
   
@@ -261,6 +114,7 @@
       @media screen and (min-width: 501px) and (max-width: 768px) {
         flex-direction: column;
         gap: 0;
+       
       }
   
       @media screen and (max-width: 768px) {
@@ -269,7 +123,7 @@
       }
   
       .menu-item {
-        flex: 1 0 70px;
+        flex: 1 0 100px;
         min-width: 150px;
         transition: all 0.2s ease-in-out;
         max-height: 50px;
@@ -278,7 +132,7 @@
           white-space: nowrap;
           font-family: 'Roboto', sans-serif;
           text-decoration: none;
-          color: #544410;
+          color: black;
         }
   
         a:hover {
@@ -287,7 +141,7 @@
       }
   
       .menu-item:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
   }
