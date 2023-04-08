@@ -86,8 +86,11 @@ function perso_menu_item_title($title, $item, $args) {
     return  $title ;    
 }
 // "****************make it comment"
+
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
+
 //////////////////////////////////////////////////////////////////////////
+
 function ajouter_description_class_menu( $items, $args ) {
     // Vérifier si le menu correspondant est celui que vous souhaitez modifier
     if ( 'evenement' === $args->menu ) {

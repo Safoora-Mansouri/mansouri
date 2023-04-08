@@ -1,43 +1,111 @@
-.menu__bloc{ // nav
 
-    .menu{// ul
+      .menu__bloc{ // nav
+
+//       margin: 0 auto;
+    .menu { //ul
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        list-style: none;
-        gap: 15px;
-        .menu-item{//li
-            border:1px solid #aaa;
-            flex:1 0 33%;
-            background-color: white;
+        gap: 20px;
+        list-style-type: none;
+        .menu-item {  //li
+            border: 1px solid rgb(243 239 239);
+                   
+            background-color: rgb(236, 222, 186);
             box-shadow: 0 20px 30px rgba(0,0,0);
-
-
-            a{
+            padding: 7px;
+            flex: 1 0 30%;
+         
+    
+            a {
+            
                 font-size: 2rem;
                 text-decoration: none;
-
             }
         }
     
-
+        .menu-item:hover {
+            background-color: #fad5a6;
+        
+         }
     }
-
 }
-
-@media only screen and (max-width: 767px) {
-}
-
-//////////////////////////////////////i add this part/////////////////
-
-
-
-/////////////////////////////////////////  
+      
 
 .evenement__porte {
-    background-image: url('https://s2.svgbox.net/octicons.svg?ic=bell');
+   // background-image: url('https://s2.svgbox.net/octicons.svg?ic=bell');
+   
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Home-icon.svg');
     background-repeat: no-repeat;
+  
+    background-size: contain;
      a{
-        margin-left: 30px;
+        margin-left: 60px;
+        color: rgb(199, 143, 66);
+      
+     }
+     span{
+        margin-left: 50px;
+     }
+     @media only screen and (max-width:1200px){
+      
+            padding: 2px; /* add some padding */
+            a {
+              font-size: .8rem; /* reduce the font size */
+            }
+            span {
+            display: none;
+            }
+         
      }
     
 }
+.evenement__evaluation{
+
+    
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2280/2280294.png');
+    background-repeat: no-repeat;
+  
+    background-size: contain;
+     a{
+        margin-left: 60px;
+        color: rgb(231, 146, 27);
+      
+     }
+     span{
+        margin-left: 50px;
+     }
+     @media only screen and (max-width:1200px){
+       
+            padding: 2px; /* add some padding */
+            a {
+              font-size: .8rem; /* reduce the font size */
+            }
+            span {
+            display: none;
+            }
+         
+     }
+
+}
+
+/////////////////////////////////////////
+
+
+
+
+
+
+
+
+  
+       
+
+
+  
+          
+        
+        
+
+
+  

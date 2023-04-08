@@ -27,11 +27,14 @@
         color: #555555;
         font-variant: small-caps;
         font-weight: bold;
+        padding: 10px;
+        font-size: 20px;
         .cours__sigle{
             padding:  3px;
 
             @media screen and (min-width:1000px) {
-                padding: 3px;
+                padding: 5px;
+               
             }
         }
         .cours__titre{

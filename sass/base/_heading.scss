@@ -3,9 +3,13 @@ h1{
 }
 h1 {
     font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+     @media screen and (max-width: 768px) {
+       font-size:30px;
+      }
     }
     h2 {
     font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+   
     }
     h3 {
     font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
@@ -38,9 +42,13 @@ h1 {
     h5,
     h6 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    @media screen and (max-width: 768px) {
+        font-size:25px;
+       }
     }
     
     p {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+ 
     }

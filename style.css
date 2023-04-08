@@ -38,6 +38,11 @@ h1 {
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
@@ -77,6 +82,14 @@ h4,
 h5,
 h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 25px;
+  }
 }
 
 p {
@@ -329,13 +342,15 @@ input {
   color: #555555;
   font-variant: small-caps;
   font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
 }
 .menu a .cours__sigle {
   padding: 3px;
 }
 @media screen and (min-width: 1000px) {
   .menu a .cours__sigle {
-    padding: 3px;
+    padding: 5px;
   }
 }
 .menu a .cours__titre {
@@ -397,27 +412,72 @@ input {
 }
 .menu__bloc .menu {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  list-style: none;
-  gap: 15px;
+  gap: 20px;
+  list-style-type: none;
 }
 .menu__bloc .menu .menu-item {
-  border: 1px solid #aaa;
-  flex: 1 0 33%;
-  background-color: white;
+  border: 1px solid rgb(243, 239, 239);
+  background-color: rgb(236, 222, 186);
   box-shadow: 0 20px 30px rgb(0, 0, 0);
+  padding: 7px;
+  flex: 1 0 30%;
 }
 .menu__bloc .menu .menu-item a {
   font-size: 2rem;
   text-decoration: none;
 }
+.menu__bloc .menu .menu-item:hover {
+  background-color: #fad5a6;
+}
 
 .evenement__porte {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bell");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/34/Home-icon.svg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .evenement__porte a {
-  margin-left: 30px;
+  margin-left: 60px;
+  color: rgb(199, 143, 66);
+}
+.evenement__porte span {
+  margin-left: 50px;
+}
+@media only screen and (max-width: 1200px) {
+  .evenement__porte {
+    padding: 2px; /* add some padding */
+  }
+  .evenement__porte a {
+    font-size: 0.8rem; /* reduce the font size */
+  }
+  .evenement__porte span {
+    display: none;
+  }
+}
+
+.evenement__evaluation {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/2280/2280294.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.evenement__evaluation a {
+  margin-left: 60px;
+  color: rgb(231, 146, 27);
+}
+.evenement__evaluation span {
+  margin-left: 50px;
+}
+@media only screen and (max-width: 1200px) {
+  .evenement__evaluation {
+    padding: 2px; /* add some padding */
+  }
+  .evenement__evaluation a {
+    font-size: 0.8rem; /* reduce the font size */
+  }
+  .evenement__evaluation span {
+    display: none;
+  }
 }
 
 .viewport {
@@ -447,7 +507,8 @@ Mise en page avec display: grid
 }
 
 .site__footer h3 {
-  font-size: small;
+  font-size: medium;
+  color: black;
 }
 
 .site__aside {

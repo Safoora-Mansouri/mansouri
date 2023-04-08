@@ -21,12 +21,14 @@ Mise en page avec display: grid
     
   }
   .site__footer h3{
-   font-size: small;
+   font-size: medium;
+   color: black;
   }
 
   .site__aside {
     grid-area: aside;
     background-color: rgb(185, 181, 150);
+    
   }
 /* body ou un conteneur globale */
   .site {
