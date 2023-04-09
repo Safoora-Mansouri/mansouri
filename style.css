@@ -93,12 +93,17 @@ h6 {
   h4,
   h5,
   h6 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 .invisible {
@@ -495,7 +500,9 @@ Mise en page avec display: grid
 
 .site__main {
   grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  overflow: hidden;
+  background-color: rgba(134, 132, 128, 0.5); /* Set a light gray background color */
+  /* Resolves issue with <pre> elements forcing full width. */
 }
 
 .site__footer {

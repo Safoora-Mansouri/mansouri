@@ -9,14 +9,16 @@ Mise en page avec display: grid
 }
   
   .site__main {
-    grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  grid-area: main;
+  overflow: hidden;
+  background-color: rgb(134 132 128 / 50%); /* Set a light gray background color */
+   /* Resolves issue with <pre> elements forcing full width. */
      
   }
   
   .site__footer {
     grid-area: footer;
-    background-color:rgb(169, 166, 136);;
+    background-color:rgb(169, 166, 136);
     text-align: center;
     
   }
