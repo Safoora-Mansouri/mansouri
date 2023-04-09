@@ -74,7 +74,7 @@
     background-size: contain;
      a{
         margin-left: 60px;
-        color: rgb(231, 146, 27);
+        color: rgb(238, 161, 52);
       
      }
      span{
@@ -96,9 +96,35 @@
 
 /////////////////////////////////////////
 
-.gallery__etudiant{
+.evenement__mensuelle{
+
+    
+   background-image: url('https://cdn-icons-png.flaticon.com/512/115/115902.png');
+   background-repeat: no-repeat;
+ 
+   background-size: contain;
+    a{
+       margin-left: 60px;
+       color: rgb(175, 187, 80);
+     
+    }
+    span{
+       margin-left: 50px;
+    }
+    @media only screen and (max-width:1200px){
+      
+           padding: 2px; /* add some padding */
+           a {
+             font-size: .8rem; /* reduce the font size */
+           }
+           span {
+           display: none;
+           }
+        
+    }
 
 }
+
 
 
 

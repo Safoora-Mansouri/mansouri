@@ -233,7 +233,7 @@ p {
 }
 .menu-entete-container .menu .menu-item {
   flex: 1 0 100px;
-  min-width: 300px;
+  min-width: 250px;
   transition: all 0.2s ease-in-out;
   max-height: 50px;
 }
@@ -469,7 +469,7 @@ input {
 }
 .evenement__evaluation a {
   margin-left: 60px;
-  color: rgb(231, 146, 27);
+  color: rgb(238, 161, 52);
 }
 .evenement__evaluation span {
   margin-left: 50px;
@@ -482,6 +482,30 @@ input {
     font-size: 0.8rem; /* reduce the font size */
   }
   .evenement__evaluation span {
+    display: none;
+  }
+}
+
+.evenement__mensuelle {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/115/115902.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.evenement__mensuelle a {
+  margin-left: 60px;
+  color: rgb(175, 187, 80);
+}
+.evenement__mensuelle span {
+  margin-left: 50px;
+}
+@media only screen and (max-width: 1200px) {
+  .evenement__mensuelle {
+    padding: 2px; /* add some padding */
+  }
+  .evenement__mensuelle a {
+    font-size: 0.8rem; /* reduce the font size */
+  }
+  .evenement__mensuelle span {
     display: none;
   }
 }
@@ -526,6 +550,9 @@ Mise en page avec display: grid
 .site__aside {
   grid-area: aside;
   background-color: rgb(185, 181, 150);
+}
+.site__aside a {
+  color: black;
 }
 
 /* body ou un conteneur globale */

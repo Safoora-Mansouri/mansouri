@@ -15,7 +15,6 @@ get_header() ?>
 
         <?php wp_nav_menu(array(
             "menu"=> "evenement",
-            "menu"=> "gallery",
             "container"=> "nav",
             "container_class"=> "menu__bloc"
         )); ?>
