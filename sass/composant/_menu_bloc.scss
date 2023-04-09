@@ -18,16 +18,19 @@
             flex: 1 0 10%;
            
           a {
-           
-                font-size: 1.5rem;
+               font-size: 1.5rem;
                 text-decoration: none;
-               
+              
                 
             }
+        
         }
-    
+     
         .menu-item:hover {
             background-color: #f3eee7;
+            a{
+               color:#448787;
+            }
         
          }
     }
@@ -94,7 +97,7 @@
 /////////////////////////////////////////
 
 .gallery__etudiant{
-   
+
 }
 
 

@@ -434,6 +434,9 @@ input {
 .menu__bloc .menu .menu-item:hover {
   background-color: #f3eee7;
 }
+.menu__bloc .menu .menu-item:hover a {
+  color: #448787;
+}
 
 .evenement__porte {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/34/Home-icon.svg");
