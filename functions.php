@@ -25,6 +25,7 @@ add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
  * Dans ce cas çi nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
+
 function cidweb_modifie_requete_principal( $query ) {
     if (    $query->is_home() // si page d'accueil
             && $query->is_main_query() // si requête principale
@@ -66,6 +67,8 @@ add_theme_support( 'custom-logo',
  add_theme_support('custom-background');  
  
  add_theme_support( 'post-thumbnails' );
+ 
+ ////////////////////////////////////////////////////////////////
 
 function perso_menu_item_title($title, $item, $args) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu  

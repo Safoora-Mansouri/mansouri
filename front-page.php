@@ -5,8 +5,6 @@
 get_header() ?>
 <main class="site__main">
     
- 
-   
     <section class="viewport">
         
         <h1>TP2</h1>
