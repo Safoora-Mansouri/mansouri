@@ -8,24 +8,26 @@
         flex-wrap: wrap;
         gap: 20px;
         list-style-type: none;
+        
+      
         .menu-item {  //li
+        
             border: 1px solid rgb(243 239 239);
-                   
             background-color: rgb(236, 222, 186);
             box-shadow: 0 20px 30px rgba(0,0,0);
-            padding: 7px;
-            flex: 1 0 30%;
-         
-    
-            a {
-            
-                font-size: 2rem;
+            flex: 1 0 10%;
+           
+          a {
+           
+                font-size: 1.5rem;
                 text-decoration: none;
+               
+                
             }
         }
     
         .menu-item:hover {
-            background-color: #fad5a6;
+            background-color: #f3eee7;
         
          }
     }

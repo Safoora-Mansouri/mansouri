@@ -31,6 +31,10 @@ html {
 }
 
 /*---------------------BASE----------------*/
+body {
+  text-align: center;
+}
+
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
 }
@@ -180,7 +184,7 @@ p {
   display: block;
   position: absolute;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 499px) {
   .burger {
     display: none;
   }
@@ -229,7 +233,7 @@ p {
 }
 .menu-entete-container .menu .menu-item {
   flex: 1 0 100px;
-  min-width: 150px;
+  min-width: 300px;
   transition: all 0.2s ease-in-out;
   max-height: 50px;
 }
@@ -277,7 +281,7 @@ p {
 @media only screen and (max-width: 767px) {
   .blocflex__article {
     flex: 1 0 auto;
-    height: 150px;
+    min-height: 200px;
     margin-bottom: 20px;
   }
   .blocflex__article a {
@@ -421,15 +425,14 @@ input {
   border: 1px solid rgb(243, 239, 239);
   background-color: rgb(236, 222, 186);
   box-shadow: 0 20px 30px rgb(0, 0, 0);
-  padding: 7px;
-  flex: 1 0 30%;
+  flex: 1 0 10%;
 }
 .menu__bloc .menu .menu-item a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 .menu__bloc .menu .menu-item:hover {
-  background-color: #fad5a6;
+  background-color: #f3eee7;
 }
 
 .evenement__porte {
