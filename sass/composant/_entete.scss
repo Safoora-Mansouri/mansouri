@@ -36,9 +36,7 @@
   .logomenu > a > img {
     display: block;
   
-    @media screen and (max-width: 499px) {
-      display: none;
-    }
+  
     @media screen and (min-width: 500px) {
         display: block;
         margin-left: auto;
@@ -75,12 +73,9 @@
   }
   
   .burger {
-    display: block;
+    display: none;
     position: absolute;
   
-    @media screen and (min-width: 499px) {
-      display: none;
-    }
   }
   
   /* Main Menu */
@@ -161,3 +156,4 @@
     padding-bottom: 20px;
     
   }  
+

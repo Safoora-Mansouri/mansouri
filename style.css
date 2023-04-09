@@ -33,6 +33,7 @@ html {
 /*---------------------BASE----------------*/
 body {
   text-align: center;
+  margin: 0;
 }
 
 h1 {
@@ -137,11 +138,6 @@ p {
 .logomenu > a > img {
   display: block;
 }
-@media screen and (max-width: 499px) {
-  .logomenu > a > img {
-    display: none;
-  }
-}
 @media screen and (min-width: 500px) {
   .logomenu > a > img {
     display: block;
@@ -181,13 +177,8 @@ p {
 }
 
 .burger {
-  display: block;
+  display: none;
   position: absolute;
-}
-@media screen and (min-width: 499px) {
-  .burger {
-    display: none;
-  }
 }
 
 /* Main Menu */
@@ -486,6 +477,10 @@ input {
 .viewport {
   min-height: 30vh;
   padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*-----------------LAYOUT----------------------*/
