@@ -3,8 +3,7 @@
 /* Site Header */
 .site__entete {
     text-align: center;
-  
-    a {
+      a {
       color: black;
       text-decoration: none;
     }
@@ -16,10 +15,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-   
-    
-  
-    @media screen and (max-width: 768px) {
+
+       @media screen and (max-width: 768px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -29,9 +26,6 @@
   .logomenu img {
     margin-left: 30px;
     border-radius: 50%;
-
-     
-    
   }
   
   .logomenu img:hover {
@@ -81,7 +75,6 @@
   .burger {
     display: none;
     position: absolute;
-  
   }
   
   /* Main Menu */
@@ -125,7 +118,7 @@
   
       .menu-item {
         flex: 1 0 100px;
-        min-width: 250px;
+        min-width: 200px;
         transition: all 0.2s ease-in-out;
         max-height: 50px;
   
@@ -162,4 +155,5 @@
     padding-bottom: 20px;
     
   }  
+////////////////////////////////////////
 
