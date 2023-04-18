@@ -5,7 +5,7 @@ get_header()?>
 
 <main class="site__main">
 <h1> Erreur 404</h1>
-    <p>page introuvable, vous pouvez tenter un recherche</p>
+    <h5>page introuvable, vous pouvez tenter un recherche</h5>
     <!-- ////////////////////////////////////////////// -->
     <div class="menusearch">
         <input  type="checkbox" id="chkBurger">
@@ -13,7 +13,7 @@ get_header()?>
     </div>
   <!-- ///////////////////////////////////// -->
 
-        <p>Nos choix de cours</p>
+        <h5>Nos choix de cours</h5>
         <aside class="site__center">
      
         <?php 
@@ -34,23 +34,23 @@ get_header()?>
 
 
 
-    <p>Les notes de cours</p>
-        <aside class="site__center">
+    <h5>Les notes de cours</h5>
+    <aside class="site__center">
      
-        <?php 
-        $category = get_queried_object();
-        if (isset($category))
-        {
-            $lemenu = $category->slug;
-        }else{
-            $lemenu = "cours";
-        }
+     <?php 
+     $category = get_queried_object();
+     if (isset($category))
+     {
+         $lemenu = $category->slug;
+     }else{
+         $lemenu = "cours";
+     }
 
-        wp_nav_menu(array(
-            "menu" => $lemenu,
-            "container" => "nav"
-        )); ?>
-    </aside>
+     wp_nav_menu(array(
+         "menu" => $lemenu,
+         "container" => "nav"
+     )); ?>
+ </aside>
 </main> 
 <?php get_footer(); ?>
 
