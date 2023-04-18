@@ -30,9 +30,35 @@ get_header()?>
             "container" => "nav"
         )); ?>
     </aside>
+
+
+
+
+    <p>Les notes de cours</p>
+        <aside class="site__center">
+     
+        <?php 
+        $category = get_queried_object();
+        if (isset($category))
+        {
+            $lemenu = $category->slug;
+        }else{
+            $lemenu = "cours";
+        }
+
+        wp_nav_menu(array(
+            "menu" => $lemenu,
+            "container" => "nav"
+        )); ?>
+    </aside>
 </main> 
 <?php get_footer(); ?>
-</main>
+
+
+
+
+
+
 
 
 
