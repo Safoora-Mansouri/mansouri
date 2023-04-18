@@ -82,6 +82,14 @@ h2 {
   /*_ font-family: "Slackey", cursive; _*/
 }
 
+.site__main h1 {
+  color: rgb(167, 40, 40);
+}
+
+.site__main p {
+  color: rgb(167, 40, 40);
+}
+
 h3,
 h4,
 h5,
@@ -323,6 +331,21 @@ input {
   background-color: white;
   box-shadow: 0 20px 30px rgba(9, 9, 9, 0.1);
   border: 1px solid black;
+}
+
+.site__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.site__main input {
+  background-color: white;
+  box-shadow: 0 20px 30px rgba(9, 9, 9, 0.1);
+  border: 1px solid black;
+  width: 500px;
+  height: 40px;
 }
 
 .menu {

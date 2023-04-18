@@ -41,12 +41,19 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     /*_ font-family: "Slackey", cursive; _*/
     }
+    .site__main h1{
+      color: rgb(167, 40, 40);
+    }
+    .site__main p{
+      color:  rgb(167, 40, 40);
+    }
     
     h3,
     h4,
     h5,
     h6 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ 
     @media screen and (max-width: 768px) {
         font-size:19px;
         

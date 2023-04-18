@@ -5,10 +5,11 @@ get_header()?>
 <main class="site__main">
 <h1> Erreur 404</h1>
     <p>page introuvable, vous pouvez tenter un recherche</p>
+    <!-- ////////////////////////////////////////////// -->
     <div class="menusearch">
-    <input type="checkbox" id="chkBurger">
-    <?= get_search_form(); ?>
-</div>
+        <input  type="checkbox" id="chkBurger">
+        <?= get_search_form(); ?>
+    </div>
   
     <section class="blocflex">
         <?php 
