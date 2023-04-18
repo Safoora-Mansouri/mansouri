@@ -348,6 +348,11 @@ input {
   height: 40px;
 }
 
+.menu-note-wp-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -576,6 +581,13 @@ Mise en page avec display: grid
 }
 .site__aside a {
   color: black;
+}
+
+.site__center {
+  display: flex;
+}
+.site__center a {
+  color: rgb(36, 63, 202);
 }
 
 /* body ou un conteneur globale */

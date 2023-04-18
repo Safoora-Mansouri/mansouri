@@ -1,5 +1,6 @@
-<?php
 
+
+<?php
 get_header()?>
 
 <main class="site__main">
@@ -10,21 +11,29 @@ get_header()?>
         <input  type="checkbox" id="chkBurger">
         <?= get_search_form(); ?>
     </div>
-  
-    <section class="blocflex">
+  <!-- ///////////////////////////////////// -->
+
+        <p>Nos choix de cours</p>
+        <aside class="site__center">
+     
         <?php 
-        if (have_posts()):
-            while (have_posts()) : the_post(); ?>
-                <?php 
-                $ma_categorie = "note-wp";
-                if (in_category('galerie')){$ma_categorie = "galerie";}
-                get_template_part("template-parts/categorie", $ma_categorie);
-             endwhile; 
-        endif; ?>   
-    </section>
+        $category = get_queried_object();
+        if (isset($category))
+        {
+            $lemenu = $category->slug;
+        }else{
+            $lemenu = "note-wp";
+        }
+
+        wp_nav_menu(array(
+            "menu" => $lemenu,
+            "container" => "nav"
+        )); ?>
+    </aside>
 </main> 
 <?php get_footer(); ?>
 </main>
+
 
 
 

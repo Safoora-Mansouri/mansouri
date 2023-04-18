@@ -36,6 +36,14 @@ Mise en page avec display: grid
     }
     
   }
+  .site__center{
+    display: flex;
+    
+    a{
+      color: rgb(36, 63, 202);
+      
+    }
+  }
 
   
   
@@ -75,3 +83,5 @@ Mise en page avec display: grid
       "footer";
     }
   }
+
+  
